@@ -1,0 +1,146 @@
+body {
+  margin: 0;
+  color: #F9F9F9;
+  font-family: Roboto;
+}
+
+#navToggle {
+  display: none;
+}
+
+.nav-links {
+  text-decoration: none;
+}
+
+#navbar {
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+  position: fixed;
+  background-color: #323232;
+}
+
+.headerList {
+  display: flex;
+  justify-content: center;
+  list-style-type: none;
+}
+
+.headerLinks {
+  margin: -4px 15px;
+  color: #FFFFFF;
+}
+
+.icon {
+  font-size: 20px;
+}
+
+#welcome-section {
+  display: grid;
+  grid-template-rows: 1fr 1fr;
+  grid-template-areas:
+  "about"
+  "accounts";
+  justify-items: center;
+  grid-gap: 5vh;
+  min-height: 100vh;
+  color: #323232;
+}
+
+.about {
+  grid-area: about;
+  align-self: end;
+  text-align: center;
+}
+
+#name {
+  font-family: Comfortaa;
+  font-size: 2.25em;
+  margin: auto;
+}
+
+#projects {
+  display: grid;
+  grid-template-rows: repeat(2, 1fr);
+  grid-template-columns: repeat(4, 1fr);
+  justify-items: center;
+  margin: 0 10vw 4vh 10vw;
+  grid-template-areas:
+    "title title title title"
+    "project1 project2 project3 project4";
+  color: #323232;
+}
+
+#projectTitle {
+  grid-area: title;
+  align-self: center;
+}
+
+.project-tile {
+  text-align: center;
+  text-decoration: none;
+  border: 1px solid black;
+  color: inherit;
+}
+
+#project1 {
+  grid-area: project1;
+}
+
+#project2 {
+  grid-area: project2;
+}
+
+#project3 {
+  grid-area: project3;
+}
+
+#project4 {
+  grid-area: project4;
+}
+
+.image {
+  height: 180px;
+}
+
+@media (max-width: 1600px){
+  #projects {
+    display: grid;
+    grid-template-rows: repeat(3, 1fr);
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-areas:
+      "title title"
+      "project1 project2"
+      "project3 project4";
+    grid-gap: 2vh 0;
+  }
+}
+@media (max-width: 900px){
+  #projects {
+    display: grid;
+    grid-template-rows: repeat(5, 1fr);
+    grid-template-columns: 1fr;
+    grid-template-areas:
+      "title"
+      "project1"
+      "project2"
+      "project3"
+      "project4";
+    grid-gap: 1vh 0;
+  }
+}
+
+@media (max-width:600px) {
+
+  #navbar,
+  .headerList {
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+  }
+
+  .headerLinks {
+    margin: .33em;
+  }
+
+}
