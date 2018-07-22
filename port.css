@@ -4,7 +4,7 @@ body {
   font-family: Roboto;
 }
 
-#navToggle {
+#toggle {
   display: none;
 }
 
@@ -141,6 +141,16 @@ body {
 
   .headerLinks {
     margin: .33em;
+  }
+
+  .mobileToggle {
+    display: none;
+  }
+
+  #toggle {
+  display: flex;
+  margin: 14px;
+  cursor: pointer;
   }
 
 }
