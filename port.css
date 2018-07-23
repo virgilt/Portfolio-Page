@@ -4,6 +4,15 @@ body {
   font-family: Roboto;
 }
 
+#navToggleLogo {
+  display: flex;
+  justify-content: flex-start;
+}
+
+#navLogo {
+  margin-right: -40px;
+}
+
 #toggle {
   display: none;
 }
@@ -115,6 +124,7 @@ body {
     grid-gap: 2vh 0;
   }
 }
+
 @media (max-width: 900px){
   #projects {
     display: grid;
@@ -148,9 +158,13 @@ body {
   }
 
   #toggle {
-  display: flex;
+  display: initial;
   margin: 14px;
   cursor: pointer;
+  }
+
+  .mobileShow {
+    display: flex;
   }
 
 }
