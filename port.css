@@ -41,6 +41,10 @@ body {
   color: #FFFFFF;
 }
 
+.headerLinks:hover {
+  color: #B7B7B7;
+}
+
 .icon {
   font-size: 20px;
 }
