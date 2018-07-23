@@ -11,36 +11,42 @@
   <body>
     <header>
       <nav id="navbar">
-
-        <div id="navToggleLogo">
-          <ul id="navLogo" class="headerList">
-            <a class="nav-links" href="#">
-              <li class="headerLinks">VIRGIL</li>
-            </a>
-          </ul>
-
-          <ul id="toggleAbout" class="headerList">
-            <i id="toggle" class="fas fa-bars headerLinks icon"></i>
-              <a class="nav-links" href="#">
-                <li class="headerLinks mobileToggle">About</li>
+        <div class="navAllLinks">
+          <ul id="navPages" class="headerList">
+              <a id="navLogo" class="navLinks" href="#">
+                <li class="headerLinks">VIRGIL</li>
               </a>
+              <i id="toggle" class="fas fa-bars headerLinks icon"></i>
+                <a class="navLinks" href="#">
+                  <li class="headerLinks mobileToggle">About</li>
+                </a>
+                <a class="navLinks" href="#">
+                  <li class="headerLinks mobileToggle">Contact</li>
+                </a>
           </ul>
+
+          <div id="navIcon">
+            <ul class="headerList">
+              <a id="github"  class="navLinks headerLinks mobileToggle icon" href="https://github.com/virgilt" target="_blank">
+                <i class="fab fa-github"></i>
+              </a>
+
+              <a id="freeCodeCamp" class="navLinks headerLinks mobileToggle icon" href="https://www.freecodecamp.org/virgilt" target="_blank">
+                <i class="fab fa-free-code-camp"></i>
+              </a>
+
+              <a id="linkedin" class="navLinks headerLinks mobileToggle icon" href="linkedin.com/in/travisvirgil" target="_blank">
+                <i class="fab fa-linkedin"></i>
+              </a>
+            </ul>
+          </div>
         </div>
 
-        <div class="">
-          <ul class="headerList">
-            <a id="github"  class="nav-links headerLinks mobileToggle icon" href="https://github.com/virgilt" target="_blank">
-              <i class="fab fa-github"></i>
-            </a>
 
-            <a id="freeCodeCamp" class="nav-links headerLinks mobileToggle icon" href="https://www.freecodecamp.org/virgilt" target="_blank">
-              <i class="fab fa-free-code-camp"></i>
-            </a>
-
-            <a id="linkedin" class="nav-links headerLinks mobileToggle icon" href="linkedin.com/in/travisvirgil" target="_blank">
-              <i class="fab fa-linkedin"></i>
-            </a>
-          </ul>
+        <div id="headerMobileList">
+          <a id="navMobileLogo" class="navLinks" href="#">
+            <li id="headerMobileLinks">VIRGIL</li>
+          </a>
         </div>
 
       </nav>

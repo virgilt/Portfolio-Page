@@ -4,23 +4,6 @@ body {
   font-family: Roboto;
 }
 
-#navToggleLogo {
-  display: flex;
-  justify-content: flex-start;
-}
-
-#navLogo {
-  margin-right: -40px;
-}
-
-#toggle {
-  display: none;
-}
-
-.nav-links {
-  text-decoration: none;
-}
-
 #navbar {
   display: flex;
   justify-content: space-around;
@@ -29,10 +12,28 @@ body {
   background-color: #323232;
 }
 
+.navAllLinks {
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+}
+
+#toggle {
+  display: none;
+}
+
+.navLinks {
+  text-decoration: none;
+}
+
 .headerList {
   display: flex;
   justify-content: center;
   list-style-type: none;
+}
+
+#headerMobileList {
+  display: none;
 }
 
 .headerLinks {
@@ -50,7 +51,7 @@ body {
   grid-template-areas:
   "about"
   "accounts";
-  justify-items: center;
+  justify-content: center;
   grid-gap: 5vh;
   min-height: 100vh;
   color: #323232;
@@ -142,7 +143,21 @@ body {
 
 @media (max-width:600px) {
 
-  #navbar,
+  #navbar {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(1, 1fr);
+    grid-template-areas:
+    "toggle"
+    "logo";
+    justify-items: start;
+  }
+
+  #navLogo {
+    display: none;
+  }
+
+  .navAllLinks,
   .headerList {
     display: flex;
     flex-direction: column;
@@ -165,6 +180,17 @@ body {
 
   .mobileShow {
     display: flex;
+  }
+
+  #headerMobileList {
+    display: initial;
+    list-style-type: none;
+    margin: 10px auto auto -4vw;
+  }
+
+  #headerMobileLinks {
+    margin: .33em;
+    color: #FFFFFF;
   }
 
 }
